@@ -15,9 +15,6 @@ const Financial = () => {
       }}
     >
       <h1 style={{ textAlign: "center" }}>Financial Services in Pune</h1>
-      <div>
-        ................................................................................................................................................................................................................................................................................
-      </div>
       <h2>Financial Advisory in Pune</h2>
       <p>
         When it comes to financial advisory in Pune, RAJKUMAR RAJPUT &amp;

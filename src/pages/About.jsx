@@ -4,15 +4,6 @@ const About = () => {
   return (
     <div style={{ marginLeft: 50, marginTop: 150 }}>
       <h2>ABOUT US</h2>
-      <p
-        style={{
-          textDecoration: "dotted",
-          color: "gray",
-          fontSize: "xx-small",
-        }}
-      >
-        ......................................................................................................................................................................................................................................................................................................
-      </p>
       <p>
         About Us RAJKUMAR RAJPUT &amp; ASSOCIATES is a professionally managed
         firm catering to domestic and international clients and cross boarder

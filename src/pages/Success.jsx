@@ -17,8 +17,7 @@ const Success = () => {
       <div className="container">
         <h2 className="l-heading">Thank You For Submission</h2>
         <p className="lead">We will get back to you soon</p>
-        <link to="/" />
-        Go Back
+        <Link to="/">Go Back</Link>
       </div>
     </section>
   );

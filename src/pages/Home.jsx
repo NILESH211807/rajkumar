@@ -18,12 +18,12 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   // API base url
-  const BASE_URL = "http://localhost/dashboard/PHP_CODE/for%20data%20mail";
+  const BASE_URL = "https://rrassociate.in/api";
 
   useEffect(() => {
     if (!window.google) return;
-
-    const loc = { lat: 28.630044, lng: 77.372082 };
+    // 18.349901,74.028452
+    const loc = { lat: 18.349901, lng: 74.028452 };
 
     const map = new window.google.maps.Map(mapRef.current, {
       zoom: 14,
@@ -164,7 +164,7 @@ const Home = () => {
                   <br />
                   <br />
                   <Link to="/tax" style={{ marginLeft: 85 }}>
-                    read more
+                    READ MORE
                   </Link>
                 </p>
               </div>
@@ -270,6 +270,57 @@ const Home = () => {
         <div className="container">
           <h2 className="m-heading text-center">
             <span className="text-primary">Our</span>
+            Address
+          </h2>
+          <div className="items py-1">
+            <div>
+              <ul>
+                <h3>Firm Name :</h3>
+                RAJKUMAR RAJPUT &amp; ASSOCIATES
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <h3>Chartered Accountants :</h3>
+                <p>CA. RAJKUMAR RAJPUT</p>
+              </ul>
+            </div>
+            <div>
+              <h3>Head Office : Saswad</h3>
+              <ul>
+                <h3>Office Address :</h3>
+                Flat No. 8, 2nd Floor, Mandar Complex, Opp. ST Stand,
+                <br /> Saswad, Pune, Maharashtra, India- 412301{" "}
+              </ul>
+            </div>
+            <div>
+              <ul>
+                {" "}
+                <h3>Mobile No.:</h3>
+                <a>9822990724</a>{" "}
+              </ul>
+            </div>
+            <div style={{ marginLeft: 30 }}>
+              {" "}
+              <ul>
+                {" "}
+                <h3>
+                  E-mail:
+                  <a href="mailto:rajkumar.rajput045@gmail.com">
+                    {" "}
+                    rajkumar.rajput045@gmail.com
+                  </a>
+                </h3>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <section id="clients" className="py-1 bg-light">
+        <div className="container">
+          <h2 className="m-heading text-center">
+            <span className="text-primary">Our</span>
             Clients
           </h2>
           <div className="items py-1">
@@ -301,12 +352,11 @@ const Home = () => {
                 <Link to="mailto:rajkumar.rajput045@gmail.com">
                   rajkumar.rajput045@gmail.com
                 </Link>
-                {/*,p*/}
               </p>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Section: Contact*/}
       <section id="contact">
         <div className="contact-form bg-primary p-2">
@@ -374,7 +424,15 @@ const Home = () => {
             />
           </form>
         </div>
-        <div ref={mapRef} className="map" />;
+        {/* <div ref={mapRef} className="map" />; */}
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3786.942839911311!2d74.02587477423306!3d18.349891974367463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2efbff7fc0bd9%3A0x1710d5a0e167cda5!2sRajkumar%20Rajput%20and%20Associates!5e0!3m2!1sen!2sin!4v1743263733028!5m2!1sen!2sin"
+          width={600}
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
       </section>
     </>
   );

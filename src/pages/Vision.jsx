@@ -11,13 +11,6 @@ const Vision = () => {
       }}
     >
       <h2>VISION</h2>
-      <p
-        style={{
-          color: "gray",
-          fontSize: "xx-small",
-          border: "1.5px dashed rgb(202, 202, 202)",
-        }}
-      ></p>
       <p>
         To be the most highly respected professional firm where clients come for
         the peace of mind that their interests are being cared for and their

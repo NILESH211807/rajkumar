@@ -4,7 +4,7 @@ error_reporting(0);
 // error_reporting(E_ALL);
 // ini_set('display_errors', 1);
 header('Content-Type: application/json');
-header("Access-Control-Allow-Origin: http://localhost:5173"); // Allow only your frontend
+header("Access-Control-Allow-Origin: *"); // Allow only your frontend
 header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 
@@ -103,23 +103,25 @@ echo json_encode($response);
 function sendEmailWithPHPMailer($name, $email, $phone, $query, $message)
 {
     $mail = new PHPMailer(true);
-    $senderMail = 'nileshkumar0815@gmail.com';
-    $senderPassword = 'yqasafzssswruqes';
+    $main_email = 'rajkumarrajput@rrassociate.in';
+    $mail_password = 'Sbs@4357';
+
+    $receive_mail = "nileshkpaswan@gmail.com";
 
     try {
         // SMTP Configuration
         $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com';
+        $mail->Host       = 'smtp.hostinger.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = $senderMail; // Replace with your email
-        $mail->Password   = $senderPassword; // Use an App Password, not your actual password
+        $mail->Username   = $main_email; // Replace with your email
+        $mail->Password   = $mail_password; // Use an App Password, not your actual password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
         // Email Headers
-        $mail->setFrom($senderMail, 'Contact Form Submission');
-        $mail->addAddress($email, $name); // Replace with recipient email
-        $mail->addReplyTo($email, $name);
+        $mail->setFrom($main_email, 'Contact Form Submission');
+        $mail->addAddress($receive_mail, $name); // Replace with recipient email
+        $mail->addReplyTo($main_email, $name);
 
         // Email Content
         $mail->isHTML(true);

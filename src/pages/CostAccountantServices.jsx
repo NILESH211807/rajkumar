@@ -15,9 +15,6 @@ const CostAccountantServices = () => {
       }}
     >
       <h2>Cost Accountant Services in Pune</h2>
-      <p>
-        ...............................................................................................................................................................................................................................................................................
-      </p>
       <h2>What Is Cost Accounting?</h2>
       <p>
         Cost accounting is a type of management accounting that considers both
@@ -82,13 +79,12 @@ const CostAccountantServices = () => {
       </ul>
       <br />
       <p>
-        <Link to="/">RAJKUMAR RAJPUT &amp; ASSOCIATES </Link> provide
-        Cost Accountant services in Pune, FLAT NO 8 2nd Floor, Mandar Complex,
-        Opp St Stand, Saswad, Pune, Maharashtra, India- 412301. We think our
-        clients shouldn't have to worry about staying current on tax laws. We
-        provide comprehensive end-to-end taxation services by keeping clients
-        updated on developments and providing them with the best tax planning
-        guidance.
+        <Link to="/">RAJKUMAR RAJPUT &amp; ASSOCIATES </Link> provide Cost
+        Accountant services in Pune, FLAT NO 8 2nd Floor, Mandar Complex, Opp St
+        Stand, Saswad, Pune, Maharashtra, India- 412301. We think our clients
+        shouldn't have to worry about staying current on tax laws. We provide
+        comprehensive end-to-end taxation services by keeping clients updated on
+        developments and providing them with the best tax planning guidance.
       </p>
     </div>
   );

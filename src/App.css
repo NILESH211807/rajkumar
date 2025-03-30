@@ -121,6 +121,7 @@ p {
 
 /* Navbar */
 #navbar {
+  width: 100%;
   display: flex;
   position: sticky;
   top: 0;
@@ -129,6 +130,13 @@ p {
   justify-content: space-between;
   z-index: 1;
   padding: 1rem;
+}
+
+#navbar .logo span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 #navbar ul {
@@ -176,6 +184,13 @@ p {
   min-width: 220px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
+}
+
+@media (max-width: 549px) {
+  .dropdown-content {
+    left: 0;
+    transform: translate(-50%, 20px);
+  }
 }
 .dropdown-content .dropdownn {
   color: black;
@@ -302,8 +317,9 @@ p {
   }
 
   #what .items .item img {
-    width: 100%;
+    width: 100% !important;
     margin-bottom: 20px;
+    height: auto !important;
   }
 
   .container {
@@ -377,4 +393,77 @@ p {
 #contact .contact-form textarea {
   width: 100%;
   padding: 0.5rem;
+}
+
+@media (max-width: 1016px) {
+  #navbar .logo span {
+    font-size: 20px;
+  }
+
+  #navbar ul {
+    padding: 0 !important;
+  }
+  #navbar ul li a {
+    margin: 0 !important;
+  }
+
+  #who {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #clients .container .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+
+  #contact iframe {
+    width: 100% !important;
+    height: 500px;
+  }
+}
+
+@media (max-width: 880px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar ul {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  #navbar .logo span {
+    font-size: 17px;
+  }
+
+  #navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #clients .container .items {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 100%;
+    margin: 0;
+  }
+
+  main div {
+    margin-left: 0 !important;
+    padding: 15px;
+  }
 }
